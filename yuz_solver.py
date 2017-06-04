@@ -38,12 +38,12 @@ class Game(object):
 					return False
 		return True
 
+	# return all of the locations on the board b/c the first move can be anywhere
 	def getAllSquares(self):
-		moves = [(1,7)]
+		moves = [(1,7)] # seed the first move
 		for i in range(dimX):
 			for x in range(dimY):
 				moves.append((i,x))
-
 		return moves
 
 
